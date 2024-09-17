@@ -1,0 +1,162 @@
+WARNING:__main__:No valid private key found. Some features may be limited.
+INFO:__main__:Starting Flask application...
+ * Serving Flask app 'main'
+ * Debug mode: on
+INFO:werkzeug:WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.196.73:5000
+INFO:werkzeug:Press CTRL+C to quit
+INFO:werkzeug: * Restarting with stat
+WARNING:__main__:No valid private key found. Some features may be limited.
+INFO:__main__:Starting Flask application...
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 137-524-480
+DEBUG:arbitrage_logic:Fetching price for SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/ammInfo/SOL/USDC HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/ammInfo/SOL/USDC
+WARNING:dex_wrapper:Returning mock price for SOL/USDC: 50.9
+DEBUG:arbitrage_logic:Price for SOL/USDC: 50.9
+DEBUG:arbitrage_logic:Fetching price for USDC/SOL
+DEBUG:dex_wrapper:Fetching price for USDC/SOL from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/ammInfo/USDC/SOL HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for USDC/SOL: 404 Client Error: Not Found for url: https://api.raydium.io/v2/ammInfo/USDC/SOL
+WARNING:dex_wrapper:Returning mock price for USDC/SOL: 45.27
+DEBUG:arbitrage_logic:Price for USDC/SOL: 45.27
+DEBUG:arbitrage_logic:Inverse price for USDC/SOL: 0.02208968411751712
+DEBUG:arbitrage_logic:Fetching price for SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/ammInfo/SOL/USDT HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/ammInfo/SOL/USDT
+WARNING:dex_wrapper:Returning mock price for SOL/USDT: 48.45
+DEBUG:arbitrage_logic:Price for SOL/USDT: 48.45
+DEBUG:arbitrage_logic:Fetching price for USDT/SOL
+DEBUG:dex_wrapper:Fetching price for USDT/SOL from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/ammInfo/USDT/SOL HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for USDT/SOL: 404 Client Error: Not Found for url: https://api.raydium.io/v2/ammInfo/USDT/SOL
+WARNING:dex_wrapper:Returning mock price for USDT/SOL: 71.86
+DEBUG:arbitrage_logic:Price for USDT/SOL: 71.86
+DEBUG:arbitrage_logic:Inverse price for USDT/SOL: 0.013915947676036738
+DEBUG:arbitrage_logic:Fetching price for BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/ammInfo/BTC/USDC HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/ammInfo/BTC/USDC
+WARNING:dex_wrapper:Returning mock price for BTC/USDC: 9.69
+DEBUG:arbitrage_logic:Price for BTC/USDC: 9.69
+DEBUG:arbitrage_logic:Fetching price for USDC/BTC
+DEBUG:dex_wrapper:Fetching price for USDC/BTC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/ammInfo/USDC/BTC HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for USDC/BTC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/ammInfo/USDC/BTC
+WARNING:dex_wrapper:Returning mock price for USDC/BTC: 17.56
+DEBUG:arbitrage_logic:Price for USDC/BTC: 17.56
+DEBUG:arbitrage_logic:Inverse price for USDC/BTC: 0.056947608200455586
+DEBUG:arbitrage_logic:Opportunities found: []
+INFO:werkzeug:172.31.196.73 - - [15/Sep/2024 03:35:07] "GET /debug HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Fetching price for SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/ammInfo/SOL/USDC HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/ammInfo/SOL/USDC
+WARNING:dex_wrapper:Returning mock price for SOL/USDC: 79.98
+DEBUG:arbitrage_logic:Price for SOL/USDC: 79.98
+DEBUG:arbitrage_logic:Fetching price for USDC/SOL
+DEBUG:dex_wrapper:Fetching price for USDC/SOL from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/ammInfo/USDC/SOL HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for USDC/SOL: 404 Client Error: Not Found for url: https://api.raydium.io/v2/ammInfo/USDC/SOL
+WARNING:dex_wrapper:Returning mock price for USDC/SOL: 92.94
+DEBUG:arbitrage_logic:Price for USDC/SOL: 92.94
+DEBUG:arbitrage_logic:Inverse price for USDC/SOL: 0.010759629868732516
+DEBUG:arbitrage_logic:Fetching price for SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/ammInfo/SOL/USDT HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/ammInfo/SOL/USDT
+WARNING:dex_wrapper:Returning mock price for SOL/USDT: 79.93
+DEBUG:arbitrage_logic:Price for SOL/USDT: 79.93
+DEBUG:arbitrage_logic:Fetching price for USDT/SOL
+DEBUG:dex_wrapper:Fetching price for USDT/SOL from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/ammInfo/USDT/SOL HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for USDT/SOL: 404 Client Error: Not Found for url: https://api.raydium.io/v2/ammInfo/USDT/SOL
+WARNING:dex_wrapper:Returning mock price for USDT/SOL: 29.58
+DEBUG:arbitrage_logic:Price for USDT/SOL: 29.58
+DEBUG:arbitrage_logic:Inverse price for USDT/SOL: 0.03380662609871535
+DEBUG:arbitrage_logic:Fetching price for BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/ammInfo/BTC/USDC HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/ammInfo/BTC/USDC
+WARNING:dex_wrapper:Returning mock price for BTC/USDC: 7.28
+DEBUG:arbitrage_logic:Price for BTC/USDC: 7.28
+DEBUG:arbitrage_logic:Fetching price for USDC/BTC
+DEBUG:dex_wrapper:Fetching price for USDC/BTC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/ammInfo/USDC/BTC HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for USDC/BTC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/ammInfo/USDC/BTC
+WARNING:dex_wrapper:Returning mock price for USDC/BTC: 41.42
+DEBUG:arbitrage_logic:Price for USDC/BTC: 41.42
+DEBUG:arbitrage_logic:Inverse price for USDC/BTC: 0.024142926122646062
+DEBUG:arbitrage_logic:Opportunities found: []
+DEBUG:__main__:Opportunities found: []
+ERROR:__main__:Error in index route: 'opportunity' is undefined
+INFO:werkzeug:172.31.196.73 - - [15/Sep/2024 03:35:11] "GET / HTTP/1.1" 500 -
+INFO:werkzeug:172.31.196.73 - - [15/Sep/2024 03:35:11] "GET /static/css/styles.css HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Fetching price for SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/ammInfo/SOL/USDC HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/ammInfo/SOL/USDC
+WARNING:dex_wrapper:Returning mock price for SOL/USDC: 80.0
+DEBUG:arbitrage_logic:Price for SOL/USDC: 80.0
+DEBUG:arbitrage_logic:Fetching price for USDC/SOL
+DEBUG:dex_wrapper:Fetching price for USDC/SOL from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/ammInfo/USDC/SOL HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for USDC/SOL: 404 Client Error: Not Found for url: https://api.raydium.io/v2/ammInfo/USDC/SOL
+WARNING:dex_wrapper:Returning mock price for USDC/SOL: 30.0
+DEBUG:arbitrage_logic:Price for USDC/SOL: 30.0
+DEBUG:arbitrage_logic:Inverse price for USDC/SOL: 0.03333333333333333
+DEBUG:arbitrage_logic:Fetching price for SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/ammInfo/SOL/USDT HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/ammInfo/SOL/USDT
+WARNING:dex_wrapper:Returning mock price for SOL/USDT: 97.61
+DEBUG:arbitrage_logic:Price for SOL/USDT: 97.61
+DEBUG:arbitrage_logic:Fetching price for USDT/SOL
+DEBUG:dex_wrapper:Fetching price for USDT/SOL from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/ammInfo/USDT/SOL HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for USDT/SOL: 404 Client Error: Not Found for url: https://api.raydium.io/v2/ammInfo/USDT/SOL
+WARNING:dex_wrapper:Returning mock price for USDT/SOL: 89.3
+DEBUG:arbitrage_logic:Price for USDT/SOL: 89.3
+DEBUG:arbitrage_logic:Inverse price for USDT/SOL: 0.011198208286674132
+DEBUG:arbitrage_logic:Fetching price for BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/ammInfo/BTC/USDC HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/ammInfo/BTC/USDC
+WARNING:dex_wrapper:Returning mock price for BTC/USDC: 13.17
+DEBUG:arbitrage_logic:Price for BTC/USDC: 13.17
+DEBUG:arbitrage_logic:Fetching price for USDC/BTC
+DEBUG:dex_wrapper:Fetching price for USDC/BTC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/ammInfo/USDC/BTC HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for USDC/BTC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/ammInfo/USDC/BTC
+WARNING:dex_wrapper:Returning mock price for USDC/BTC: 28.97
+DEBUG:arbitrage_logic:Price for USDC/BTC: 28.97
+DEBUG:arbitrage_logic:Inverse price for USDC/BTC: 0.03451846738004833
+DEBUG:arbitrage_logic:Opportunities found: []
+DEBUG:__main__:Opportunities found: []
+ERROR:__main__:Error in index route: 'opportunity' is undefined
+INFO:werkzeug:172.31.196.73 - - [15/Sep/2024 03:35:26] "GET / HTTP/1.1" 500 -
+INFO:werkzeug:172.31.196.73 - - [15/Sep/2024 03:35:26] "GET /static/css/styles.css HTTP/1.1" 304 -
+^C

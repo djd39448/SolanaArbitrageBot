@@ -1,0 +1,110 @@
+WARNING:__main__:No valid private key found. Some features may be limited.
+INFO:__main__:Starting Flask application...
+ * Serving Flask app 'main'
+ * Debug mode: on
+INFO:werkzeug:WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.196.86:5000
+INFO:werkzeug:Press CTRL+C to quit
+INFO:werkzeug: * Restarting with stat
+WARNING:__main__:No valid private key found. Some features may be limited.
+INFO:__main__:Starting Flask application...
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 129-103-516
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v3/amm/price?pair=SOL/USDC HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC from https://api.raydium.io: 404 Client Error: Not Found for url: https://api.raydium.io/v3/amm/price?pair=SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v3/amm/price?pair=SOL/USDC HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC from https://api.raydium.io: 404 Client Error: Not Found for url: https://api.raydium.io/v3/amm/price?pair=SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api-serum.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-serum.com:443
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC from https://api-serum.com: HTTPSConnectionPool(host='api-serum.com', port=443): Max retries exceeded with url: /v3/amm/price?pair=SOL/USDC (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x70a7d1c27990>: Failed to resolve 'api-serum.com' ([Errno -2] Name or service not known)"))
+WARNING:dex_wrapper:Using mock price for SOL/USDC: 35.86
+DEBUG:arbitrage_logic:Price for SOL/USDC: 35.86
+DEBUG:arbitrage_logic:Processing reverse pair: USDC/SOL
+DEBUG:dex_wrapper:Fetching price for USDC/SOL from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v3/amm/price?pair=USDC/SOL HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for USDC/SOL from https://api.raydium.io: 404 Client Error: Not Found for url: https://api.raydium.io/v3/amm/price?pair=USDC/SOL
+DEBUG:dex_wrapper:Fetching price for USDC/SOL from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v3/amm/price?pair=USDC/SOL HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for USDC/SOL from https://api.raydium.io: 404 Client Error: Not Found for url: https://api.raydium.io/v3/amm/price?pair=USDC/SOL
+DEBUG:dex_wrapper:Fetching price for USDC/SOL from https://api-serum.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-serum.com:443
+ERROR:dex_wrapper:Network error while fetching price for USDC/SOL from https://api-serum.com: HTTPSConnectionPool(host='api-serum.com', port=443): Max retries exceeded with url: /v3/amm/price?pair=USDC/SOL (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x70a7d1c547d0>: Failed to resolve 'api-serum.com' ([Errno -2] Name or service not known)"))
+WARNING:dex_wrapper:Using mock price for USDC/SOL: 77.97
+DEBUG:arbitrage_logic:Price for USDC/SOL: 77.97
+DEBUG:arbitrage_logic:Inverse price for USDC/SOL: 0.012825445684237527
+DEBUG:arbitrage_logic:No profitable opportunity for SOL/USDC
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v3/amm/price?pair=SOL/USDT HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT from https://api.raydium.io: 404 Client Error: Not Found for url: https://api.raydium.io/v3/amm/price?pair=SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v3/amm/price?pair=SOL/USDT HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT from https://api.raydium.io: 404 Client Error: Not Found for url: https://api.raydium.io/v3/amm/price?pair=SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api-serum.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-serum.com:443
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT from https://api-serum.com: HTTPSConnectionPool(host='api-serum.com', port=443): Max retries exceeded with url: /v3/amm/price?pair=SOL/USDT (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x70a7d1c24550>: Failed to resolve 'api-serum.com' ([Errno -2] Name or service not known)"))
+WARNING:dex_wrapper:Using mock price for SOL/USDT: 86.62
+DEBUG:arbitrage_logic:Price for SOL/USDT: 86.62
+DEBUG:arbitrage_logic:Processing reverse pair: USDT/SOL
+DEBUG:dex_wrapper:Fetching price for USDT/SOL from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v3/amm/price?pair=USDT/SOL HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for USDT/SOL from https://api.raydium.io: 404 Client Error: Not Found for url: https://api.raydium.io/v3/amm/price?pair=USDT/SOL
+DEBUG:dex_wrapper:Fetching price for USDT/SOL from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v3/amm/price?pair=USDT/SOL HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for USDT/SOL from https://api.raydium.io: 404 Client Error: Not Found for url: https://api.raydium.io/v3/amm/price?pair=USDT/SOL
+DEBUG:dex_wrapper:Fetching price for USDT/SOL from https://api-serum.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-serum.com:443
+ERROR:dex_wrapper:Network error while fetching price for USDT/SOL from https://api-serum.com: HTTPSConnectionPool(host='api-serum.com', port=443): Max retries exceeded with url: /v3/amm/price?pair=USDT/SOL (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x70a7d1c550d0>: Failed to resolve 'api-serum.com' ([Errno -2] Name or service not known)"))
+WARNING:dex_wrapper:Using mock price for USDT/SOL: 15.78
+DEBUG:arbitrage_logic:Price for USDT/SOL: 15.78
+DEBUG:arbitrage_logic:Inverse price for USDT/SOL: 0.06337135614702155
+DEBUG:arbitrage_logic:No profitable opportunity for SOL/USDT
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v3/amm/price?pair=BTC/USDC HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC from https://api.raydium.io: 404 Client Error: Not Found for url: https://api.raydium.io/v3/amm/price?pair=BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v3/amm/price?pair=BTC/USDC HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC from https://api.raydium.io: 404 Client Error: Not Found for url: https://api.raydium.io/v3/amm/price?pair=BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api-serum.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-serum.com:443
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC from https://api-serum.com: HTTPSConnectionPool(host='api-serum.com', port=443): Max retries exceeded with url: /v3/amm/price?pair=BTC/USDC (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x70a7d1c5a310>: Failed to resolve 'api-serum.com' ([Errno -2] Name or service not known)"))
+WARNING:dex_wrapper:Using mock price for BTC/USDC: 37.68
+DEBUG:arbitrage_logic:Price for BTC/USDC: 37.68
+DEBUG:arbitrage_logic:Processing reverse pair: USDC/BTC
+DEBUG:dex_wrapper:Fetching price for USDC/BTC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v3/amm/price?pair=USDC/BTC HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for USDC/BTC from https://api.raydium.io: 404 Client Error: Not Found for url: https://api.raydium.io/v3/amm/price?pair=USDC/BTC
+DEBUG:dex_wrapper:Fetching price for USDC/BTC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v3/amm/price?pair=USDC/BTC HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for USDC/BTC from https://api.raydium.io: 404 Client Error: Not Found for url: https://api.raydium.io/v3/amm/price?pair=USDC/BTC
+DEBUG:dex_wrapper:Fetching price for USDC/BTC from https://api-serum.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-serum.com:443
+ERROR:dex_wrapper:Network error while fetching price for USDC/BTC from https://api-serum.com: HTTPSConnectionPool(host='api-serum.com', port=443): Max retries exceeded with url: /v3/amm/price?pair=USDC/BTC (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x70a7d1c5a4d0>: Failed to resolve 'api-serum.com' ([Errno -2] Name or service not known)"))
+WARNING:dex_wrapper:Using mock price for USDC/BTC: 78.06
+DEBUG:arbitrage_logic:Price for USDC/BTC: 78.06
+DEBUG:arbitrage_logic:Inverse price for USDC/BTC: 0.012810658467845248
+DEBUG:arbitrage_logic:No profitable opportunity for BTC/USDC
+DEBUG:arbitrage_logic:Total opportunities found: 0
+DEBUG:__main__:Opportunities found: []
+ERROR:__main__:Error in index route: 'ArbitrageLogic' object has no attribute 'min_trade_size'
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:46:37] "GET / HTTP/1.1" 500 -
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:46:38] "GET /static/css/styles.css HTTP/1.1" 304 -

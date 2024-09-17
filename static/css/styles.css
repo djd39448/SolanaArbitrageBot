@@ -1,0 +1,44 @@
+@import 'https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css';
+
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark {
+    @apply bg-gray-900 text-white;
+}
+
+.dark .bg-white {
+    @apply bg-gray-800;
+}
+
+.dark .text-gray-700 {
+    @apply text-gray-300;
+}
+
+.dark .border-gray-200 {
+    @apply border-gray-700;
+}
+
+.dark input {
+    @apply bg-gray-700 text-white border-gray-600;
+}
+
+.dark button {
+    @apply bg-blue-600 hover:bg-blue-700;
+}
+
+.dark .bg-green-500 {
+    @apply bg-green-600;
+}
+
+.dark .hover\:bg-green-700:hover {
+    @apply hover:bg-green-800;
+}
+
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}

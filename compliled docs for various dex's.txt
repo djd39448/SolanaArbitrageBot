@@ -1,0 +1,16 @@
+Raydium:
+https://docs.raydium.io/raydium
+Jupiter:
+While not explicitly provided in the search results, Jupiter's documentation can typically be found at:
+https://docs.jup.ag/
+Orca:
+Orca's documentation is usually available at:
+https://docs.orca.so/
+Serum:
+Serum's documentation can often be found at:
+https://docs.projectserum.com/
+Mango Markets:
+Mango Markets' documentation is typically located at:
+https://docs.mango.markets/
+For other Solana DEXs mentioned in the search results (like Drift Protocol, Lifinity, Saros Finance, Saber, Step Finance, KyberSwap, Zeta, and Solanax), I don't have direct links to their documentation based on the provided information. To find documentation for these platforms, you would typically need to visit their official websites and look for a "Docs" or "Documentation" link.
+Remember that the availability and exact URLs of documentation can change over time, so it's always best to check the official websites of these DEXs for the most up-to-date documentation links.

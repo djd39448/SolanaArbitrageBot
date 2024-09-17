@@ -1,0 +1,909 @@
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:27:11] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:27:11] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+DEBUG:__main__:Opportunities found: []
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:27:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:27:25] "GET /static/css/styles.css HTTP/1.1" 200 -
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:27:25] "GET /static/js/app.js HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:27:26] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:27:41] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+DEBUG:__main__:Opportunities found: []
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:27:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:27:56] "GET /static/css/styles.css HTTP/1.1" 200 -
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:27:56] "GET /static/js/app.js HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:27:57] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+DEBUG:__main__:Opportunities found: []
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:28:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:28:07] "GET /static/css/styles.css HTTP/1.1" 200 -
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:28:07] "GET /static/js/app.js HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:28:08] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:28:10] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:28:41] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:29:11] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:29:41] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:30:11] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:30:40] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:31:11] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:31:41] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:32:11] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:32:41] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:33:11] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:33:41] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:34:11] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:34:41] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:35:11] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:35:41] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:36:11] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:36:41] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:37:11] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:37:41] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:38:11] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:38:40] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:39:11] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:39:41] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:40:11] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:40:41] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:41:11] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:41:41] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:42:10] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:42:41] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:43:11] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:43:41] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:44:11] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching price for SOL/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDC, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching price for SOL/USDT from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for SOL/USDT: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for SOL/USDT, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching price for BTC/USDC from https://api.raydium.io
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/info HTTP/11" 404 None
+ERROR:dex_wrapper:Network error while fetching price for BTC/USDC: 404 Client Error: Not Found for url: https://api.raydium.io/v2/info
+WARNING:arbitrage_logic:Unable to fetch price for BTC/USDC, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.86 - - [16/Sep/2024 02:44:40] "GET /api/opportunities HTTP/1.1" 200 -
+^C
