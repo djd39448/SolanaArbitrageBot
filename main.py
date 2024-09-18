@@ -117,6 +117,15 @@ def remove_trading_pair():
         return jsonify({"message": f"Trading pair {pair} removed successfully"})
     return jsonify({"error": "Invalid trading pair data"}), 400
 
+@app.route('/api/self_replicate', methods=['POST'])
+def self_replicate():
+    try:
+        new_pairs = arbitrage_logic.self_replicate()
+        return jsonify({"message": f"Self-replication complete. Added {len(new_pairs)} new trading pairs.", "new_pairs": new_pairs})
+    except Exception as e:
+        logger.error(f"Error during self-replication: {str(e)}")
+        return jsonify({"error": "An error occurred during self-replication"}), 500
+
 if __name__ == '__main__':
     logger.info("Starting Flask application...")
     try:

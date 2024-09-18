@@ -109,3 +109,18 @@ class ArbitrageLogic:
 
     def get_trading_pairs(self):
         return self.token_pairs
+
+    def self_replicate(self):
+        logger.info("Starting self-replication process")
+        new_pairs = []
+        for base in ["SOL", "BTC", "ETH"]:  # Add more base tokens as needed
+            for quote in ["USDC", "USDT"]:
+                new_pair = f"{base}/{quote}"
+                if new_pair not in self.token_pairs:
+                    new_pairs.append(new_pair)
+        
+        for pair in new_pairs:
+            self.add_trading_pair(pair)
+        
+        logger.info(f"Self-replication complete. Added {len(new_pairs)} new trading pairs.")
+        return new_pairs
