@@ -63,36 +63,30 @@
 
         <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
             <h2 class="text-xl font-semibold mb-4">Arbitrage Opportunities</h2>
-            {% if opportunities %}
-                <table class="w-full">
-                    <thead>
-                        <tr>
-                            <th class="px-4 py-2">Pair</th>
-                            <th class="px-4 py-2">Buy DEX</th>
-                            <th class="px-4 py-2">Sell DEX</th>
-                            <th class="px-4 py-2">Buy Price</th>
-                            <th class="px-4 py-2">Sell Price</th>
-                            <th class="px-4 py-2">Profit %</th>
-                            <th class="px-4 py-2">Dollar Profit</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {% for opportunity in opportunities %}
-                        <tr>
-                            <td class="border px-4 py-2">{{ opportunity.pair }}</td>
-                            <td class="border px-4 py-2">{{ opportunity.buy_dex }}</td>
-                            <td class="border px-4 py-2">{{ opportunity.sell_dex }}</td>
-                            <td class="border px-4 py-2">{{ opportunity.buy_price }}</td>
-                            <td class="border px-4 py-2">{{ opportunity.sell_price }}</td>
-                            <td class="border px-4 py-2">{{ opportunity.profit_percentage }}%</td>
-                            <td class="border px-4 py-2">${{ opportunity.dollar_profit | round(2) }}</td>
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
-            {% else %}
-                <p class="text-gray-700">No arbitrage opportunities available at the moment.</p>
-            {% endif %}
+            <table class="w-full">
+                <thead>
+                    <tr>
+                        <th class="px-4 py-2">Pair</th>
+                        <th class="px-4 py-2">Buy DEX</th>
+                        <th class="px-4 py-2">Sell DEX</th>
+                        <th class="px-4 py-2">Buy Price</th>
+                        <th class="px-4 py-2">Sell Price</th>
+                        <th class="px-4 py-2">Profit %</th>
+                        <th class="px-4 py-2">Dollar Profit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="opportunity in opportunities" :key="opportunity.pair">
+                        <td class="border px-4 py-2">{{ opportunity.pair }}</td>
+                        <td class="border px-4 py-2">{{ opportunity.buy_dex }}</td>
+                        <td class="border px-4 py-2">{{ opportunity.sell_dex }}</td>
+                        <td class="border px-4 py-2">{{ opportunity.buy_price }}</td>
+                        <td class="border px-4 py-2">{{ opportunity.sell_price }}</td>
+                        <td class="border px-4 py-2">{{ opportunity.profit_percentage }}%</td>
+                        <td class="border px-4 py-2">${{ opportunity.dollar_profit.toFixed(2) }}</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
     <script src="{{ url_for('static', filename='js/app.js') }}"></script>
