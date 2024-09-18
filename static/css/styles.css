@@ -1,44 +1,48 @@
 @import 'https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css';
 
 body {
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.dark {
-    @apply bg-gray-900 text-white;
+body.dark {
+    background-color: #1a202c;
+    color: #e2e8f0;
 }
 
 .dark .bg-white {
-    @apply bg-gray-800;
+    background-color: #2d3748;
 }
 
 .dark .text-gray-700 {
-    @apply text-gray-300;
+    color: #e2e8f0;
 }
 
-.dark .border-gray-200 {
-    @apply border-gray-700;
+.dark .shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
 }
 
 .dark input {
-    @apply bg-gray-700 text-white border-gray-600;
+    background-color: #4a5568;
+    color: #e2e8f0;
+    border-color: #718096;
 }
 
 .dark button {
-    @apply bg-blue-600 hover:bg-blue-700;
+    background-color: #4299e1;
 }
 
-.dark .bg-green-500 {
-    @apply bg-green-600;
+.dark button:hover {
+    background-color: #3182ce;
 }
 
-.dark .hover\:bg-green-700:hover {
-    @apply hover:bg-green-800;
+.dark table {
+    color: #e2e8f0;
 }
 
-.dark-mode-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
+.dark th {
+    background-color: #4a5568;
+}
+
+.dark td {
+    border-color: #718096;
 }

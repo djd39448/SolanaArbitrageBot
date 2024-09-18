@@ -52,7 +52,9 @@ def index():
             "profit_threshold": arbitrage_logic.profit_threshold
         }
         
-        return render_template('index.html', opportunities=opportunities, settings=current_settings)
+        trading_pairs = arbitrage_logic.get_trading_pairs()
+        
+        return render_template('index.html', opportunities=opportunities, settings=current_settings, trading_pairs=trading_pairs)
     except Exception as e:
         logger.error(f"Error in index route: {str(e)}")
         return render_template('error.html', error="An error occurred while fetching arbitrage opportunities. Please try again later."), 500
@@ -64,8 +66,8 @@ def get_opportunities():
 
 @app.route('/api/execute_trade', methods=['POST'])
 def execute_trade():
-    opportunity = request.json.get('opportunity')
-    if opportunity:
+    if request.json and 'opportunity' in request.json:
+        opportunity = request.json['opportunity']
         result = arbitrage_logic.execute_trade(opportunity)
         return jsonify(result)
     return jsonify({"error": "Invalid opportunity data"}), 400
@@ -73,22 +75,49 @@ def execute_trade():
 @app.route('/api/update_settings', methods=['POST'])
 def update_settings():
     try:
-        new_settings = request.json
-        config['min_trade_size'] = float(new_settings['minTradeSize'])
-        config['max_trade_size'] = float(new_settings['maxTradeSize'])
-        config['profit_threshold'] = float(new_settings['profitThreshold'])
-        
-        with open('config.json', 'w') as config_file:
-            json.dump(config, config_file, indent=4)
-        
-        # Update arbitrage logic with new settings
-        arbitrage_logic.update_settings(config)
-        
-        logger.info("Settings updated successfully")
-        return jsonify({"message": "Settings updated successfully"})
+        if request.json:
+            new_settings = request.json
+            if 'minTradeSize' in new_settings:
+                config['min_trade_size'] = float(new_settings['minTradeSize'])
+            if 'maxTradeSize' in new_settings:
+                config['max_trade_size'] = float(new_settings['maxTradeSize'])
+            if 'profitThreshold' in new_settings:
+                config['profit_threshold'] = float(new_settings['profitThreshold'])
+            
+            with open('config.json', 'w') as config_file:
+                json.dump(config, config_file, indent=4)
+            
+            # Update arbitrage logic with new settings
+            arbitrage_logic.update_settings(config)
+            
+            logger.info("Settings updated successfully")
+            return jsonify({"message": "Settings updated successfully"})
+        else:
+            return jsonify({"error": "No JSON data provided"}), 400
     except Exception as e:
         logger.error(f"Error updating settings: {str(e)}")
         return jsonify({"error": "An error occurred while updating settings"}), 500
+
+@app.route('/api/trading_pairs', methods=['GET'])
+def get_trading_pairs():
+    trading_pairs = arbitrage_logic.get_trading_pairs()
+    return jsonify(trading_pairs)
+
+@app.route('/api/add_trading_pair', methods=['POST'])
+def add_trading_pair():
+    if request.json and 'pair' in request.json:
+        new_pair = request.json['pair']
+        arbitrage_logic.add_trading_pair(new_pair)
+        return jsonify({"message": f"Trading pair {new_pair} added successfully"})
+    return jsonify({"error": "Invalid trading pair data"}), 400
+
+@app.route('/api/remove_trading_pair', methods=['POST'])
+def remove_trading_pair():
+    if request.json and 'pair' in request.json:
+        pair = request.json['pair']
+        arbitrage_logic.remove_trading_pair(pair)
+        return jsonify({"message": f"Trading pair {pair} removed successfully"})
+    return jsonify({"error": "Invalid trading pair data"}), 400
 
 if __name__ == '__main__':
     logger.info("Starting Flask application...")

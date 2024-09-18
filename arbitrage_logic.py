@@ -11,6 +11,7 @@ class ArbitrageLogic:
         self.min_trade_size = 0.1  # Default value, can be updated later
         self.max_trade_size = 10.0  # Default value, can be updated later
         self.profit_threshold = 0.005  # 0.5% profit threshold
+        self.token_pairs = ["SOL/USDC", "SOL/USDT", "BTC/USDC"]  # Initial token pairs
 
     def update_settings(self, new_settings):
         self.min_trade_size = new_settings.get('min_trade_size', self.min_trade_size)
@@ -19,10 +20,9 @@ class ArbitrageLogic:
 
     def find_opportunities(self):
         opportunities = []
-        token_pairs = ["SOL/USDC", "SOL/USDT", "BTC/USDC"]
         
         logger.debug("Starting to find arbitrage opportunities")
-        for pair in token_pairs:
+        for pair in self.token_pairs:
             try:
                 logger.debug(f"Processing pair: {pair}")
                 prices = self.dex_wrapper.get_prices(pair)
@@ -61,13 +61,17 @@ class ArbitrageLogic:
         return opportunities
 
     def _create_opportunity(self, pair, buy_dex, sell_dex, buy_price, sell_price, profit):
+        # Assume a fixed trade size of 1 unit for simplicity
+        trade_size = 1
+        dollar_profit = (sell_price - buy_price) * trade_size
         return {
             "pair": pair,
             "buy_dex": buy_dex,
             "sell_dex": sell_dex,
             "buy_price": buy_price,
             "sell_price": sell_price,
-            "profit_percentage": profit * 100
+            "profit_percentage": profit * 100,
+            "dollar_profit": dollar_profit
         }
 
     def execute_trade(self, opportunity):
@@ -88,3 +92,20 @@ class ArbitrageLogic:
             "sell_order": sell_order,
             "estimated_profit": estimated_profit
         }
+
+    def add_trading_pair(self, new_pair):
+        if new_pair not in self.token_pairs:
+            self.token_pairs.append(new_pair)
+            logger.info(f"Added new trading pair: {new_pair}")
+        else:
+            logger.warning(f"Trading pair {new_pair} already exists")
+
+    def remove_trading_pair(self, pair):
+        if pair in self.token_pairs:
+            self.token_pairs.remove(pair)
+            logger.info(f"Removed trading pair: {pair}")
+        else:
+            logger.warning(f"Trading pair {pair} not found")
+
+    def get_trading_pairs(self):
+        return self.token_pairs
