@@ -52,9 +52,7 @@ def index():
             "profit_threshold": arbitrage_logic.profit_threshold
         }
         
-        trading_pairs = arbitrage_logic.get_trading_pairs()
-        
-        return render_template('index.html', opportunities=opportunities, settings=current_settings, trading_pairs=trading_pairs)
+        return render_template('index.html', opportunities=opportunities, settings=current_settings)
     except Exception as e:
         logger.error(f"Error in index route: {str(e)}")
         return render_template('error.html', error="An error occurred while fetching arbitrage opportunities. Please try again later."), 500
