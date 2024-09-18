@@ -7,7 +7,9 @@ const app = Vue.createApp({
                 maxTradeSize: 10,
                 profitThreshold: 0.5
             },
-            darkMode: false
+            darkMode: false,
+            tradingPairs: [],
+            newPair: ''
         }
     },
     methods: {
@@ -37,14 +39,49 @@ const app = Vue.createApp({
             alert('Settings updated!');
         },
         toggleDarkMode() {
-            console.log('Toggle Dark Mode clicked');
             this.darkMode = !this.darkMode;
             document.body.classList.toggle('dark', this.darkMode);
             localStorage.setItem('darkMode', this.darkMode);
+        },
+        async fetchTradingPairs() {
+            const response = await fetch('/api/trading_pairs');
+            this.tradingPairs = await response.json();
+        },
+        async addTradingPair() {
+            if (this.newPair) {
+                await fetch('/api/add_trading_pair', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ pair: this.newPair })
+                });
+                this.newPair = '';
+                await this.fetchTradingPairs();
+            }
+        },
+        async removeTradingPair(pair) {
+            await fetch('/api/remove_trading_pair', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ pair })
+            });
+            await this.fetchTradingPairs();
+        },
+        async selfReplicate() {
+            const response = await fetch('/api/self_replicate', {
+                method: 'POST'
+            });
+            const result = await response.json();
+            alert(result.message);
+            await this.fetchTradingPairs();
         }
     },
     mounted() {
         this.fetchOpportunities();
+        this.fetchTradingPairs();
         setInterval(this.fetchOpportunities, 30000); // Fetch every 30 seconds
         
         // Load dark mode preference from localStorage

@@ -41,6 +41,27 @@
         </div>
 
         <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <h2 class="text-xl font-semibold mb-4">Trading Pairs</h2>
+            <ul>
+                <li v-for="pair in tradingPairs" :key="pair" class="mb-2">
+                    {{ pair }}
+                    <button @click="removeTradingPair(pair)" class="ml-2 bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded text-xs">
+                        Remove
+                    </button>
+                </li>
+            </ul>
+            <div class="mt-4">
+                <input v-model="newPair" placeholder="New trading pair (e.g., ETH/USDC)" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                <button @click="addTradingPair" class="mt-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                    Add Trading Pair
+                </button>
+            </div>
+            <button @click="selfReplicate" class="mt-4 bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                Self-Replicate Trading Pairs
+            </button>
+        </div>
+
+        <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
             <h2 class="text-xl font-semibold mb-4">Arbitrage Opportunities</h2>
             {% if opportunities %}
                 <table class="w-full">
