@@ -9,13 +9,26 @@ const app = Vue.createApp({
             },
             darkMode: false,
             tradingPairs: [],
-            newPair: ''
+            newPair: '',
+            opportunitiesInterval: null
         }
     },
     methods: {
         async fetchOpportunities() {
-            const response = await fetch('/api/opportunities');
-            this.opportunities = await response.json();
+            try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 second timeout
+                const response = await fetch('/api/opportunities', { signal: controller.signal });
+                clearTimeout(timeoutId);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const opportunities = await response.json();
+                this.opportunities = opportunities;
+                console.log('Opportunities updated:', opportunities);
+            } catch (error) {
+                console.error('Error fetching opportunities:', error);
+            }
         },
         async executeTrade(opportunity) {
             const response = await fetch('/api/execute_trade', {
@@ -80,9 +93,9 @@ const app = Vue.createApp({
         }
     },
     mounted() {
-        this.fetchOpportunities();
+        this.fetchOpportunities(); // Fetch immediately on mount
+        this.opportunitiesInterval = setInterval(this.fetchOpportunities, 5000); // Then every 5 seconds
         this.fetchTradingPairs();
-        setInterval(this.fetchOpportunities, 30000); // Fetch every 30 seconds
         
         // Load dark mode preference from localStorage
         const savedDarkMode = localStorage.getItem('darkMode');
@@ -90,6 +103,9 @@ const app = Vue.createApp({
             this.darkMode = JSON.parse(savedDarkMode);
             document.body.classList.toggle('dark', this.darkMode);
         }
+    },
+    beforeUnmount() {
+        clearInterval(this.opportunitiesInterval);
     }
 });
 
