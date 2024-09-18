@@ -1,0 +1,93 @@
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): price.jup.ag:443
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=SOL&vsToken=USDC HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for SOL/USDC: 125.159648955
+DEBUG:dex_wrapper:Fetching Orca price for SOL/USDC
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.orca.so:443
+DEBUG:urllib3.connectionpool:https://api.orca.so:443 "GET /v2/trade/quote?inputMint=So11111111111111111111111111111111111111112&outputMint=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&amount=1000000&slippage=0.1 HTTP/11" 404 None
+ERROR:dex_wrapper:Error fetching Orca price for SOL/USDC: 404 Client Error: Not Found for url: https://api.orca.so/v2/trade/quote?inputMint=So11111111111111111111111111111111111111112&outputMint=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&amount=1000000&slippage=0.1
+ERROR:dex_wrapper:Orca API response: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /v2/trade/quote</pre>
+</body>
+</html>
+
+DEBUG:dex_wrapper:Fetching Raydium price for SOL/USDC
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/main/pairs HTTP/11" 200 None
+WARNING:dex_wrapper:No price data found for SOL/USDC in Raydium API response
+INFO:__main__:Prices for SOL/USDC: {'jupiter': 125.159648955}
+INFO:__main__:Testing price fetching for BTC/USDC
+DEBUG:dex_wrapper:Fetching Jupiter price for BTC/USDC
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=BTC&vsToken=USDC HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for BTC/USDC: 6.07471e-05
+DEBUG:dex_wrapper:Fetching Orca price for BTC/USDC
+DEBUG:urllib3.connectionpool:https://api.orca.so:443 "GET /v2/trade/quote?inputMint=9n4nbM75f5Ui33ZbPYXn59EwSgE8CGsHtAeTH5YFeJ9E&outputMint=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&amount=1000000&slippage=0.1 HTTP/11" 404 None
+ERROR:dex_wrapper:Error fetching Orca price for BTC/USDC: 404 Client Error: Not Found for url: https://api.orca.so/v2/trade/quote?inputMint=9n4nbM75f5Ui33ZbPYXn59EwSgE8CGsHtAeTH5YFeJ9E&outputMint=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&amount=1000000&slippage=0.1
+ERROR:dex_wrapper:Orca API response: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /v2/trade/quote</pre>
+</body>
+</html>
+
+DEBUG:dex_wrapper:Fetching Raydium price for BTC/USDC
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/main/pairs HTTP/11" 200 None
+WARNING:dex_wrapper:No price data found for BTC/USDC in Raydium API response
+INFO:__main__:Prices for BTC/USDC: {'jupiter': 6.07471e-05}
+INFO:__main__:Testing price fetching for SOL/USDT
+DEBUG:dex_wrapper:Fetching Jupiter price for SOL/USDT
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=SOL&vsToken=USDT HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for SOL/USDT: 133.003892277
+DEBUG:dex_wrapper:Fetching Orca price for SOL/USDT
+DEBUG:urllib3.connectionpool:https://api.orca.so:443 "GET /v2/trade/quote?inputMint=So11111111111111111111111111111111111111112&outputMint=Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB&amount=1000000&slippage=0.1 HTTP/11" 404 None
+ERROR:dex_wrapper:Error fetching Orca price for SOL/USDT: 404 Client Error: Not Found for url: https://api.orca.so/v2/trade/quote?inputMint=So11111111111111111111111111111111111111112&outputMint=Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB&amount=1000000&slippage=0.1
+ERROR:dex_wrapper:Orca API response: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /v2/trade/quote</pre>
+</body>
+</html>
+
+DEBUG:dex_wrapper:Fetching Raydium price for SOL/USDT
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/main/pairs HTTP/11" 200 None
+WARNING:dex_wrapper:No price data found for SOL/USDT in Raydium API response
+INFO:__main__:Prices for SOL/USDT: {'jupiter': 133.003892277}
+INFO:__main__:
+Testing Orca Price Fetching
+INFO:__main__:Testing Orca price fetching for SOL/USDC
+DEBUG:dex_wrapper:Fetching Orca price for SOL/USDC
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.orca.so:443
+DEBUG:urllib3.connectionpool:https://api.orca.so:443 "GET /v2/trade/quote?inputMint=So11111111111111111111111111111111111111112&outputMint=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&amount=1000000&slippage=0.1 HTTP/11" 404 None
+ERROR:dex_wrapper:Error fetching Orca price for SOL/USDC: 404 Client Error: Not Found for url: https://api.orca.so/v2/trade/quote?inputMint=So11111111111111111111111111111111111111112&outputMint=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&amount=1000000&slippage=0.1
+ERROR:dex_wrapper:Orca API response: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /v2/trade/quote</pre>
+</body>
+</html>
+
+INFO:__main__:Orca price for SOL/USDC: None
+Traceback (most recent call last):
+  File "/home/runner/SolanaArbitrageBot/test_dex_wrapper.py", line 71, in <module>
+    test_orca_price_fetching()
+  File "/home/runner/SolanaArbitrageBot/test_dex_wrapper.py", line 35, in test_orca_price_fetching
+    assert orca_price is not None, f"Expected a valid Orca price for {pair}, but got None"
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected a valid Orca price for SOL/USDC, but got None

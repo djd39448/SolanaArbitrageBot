@@ -1,0 +1,24 @@
+DEBUG:dex_wrapper:Fetching Orca price for BTC/USDC
+DEBUG:urllib3.connectionpool:https://api.orca.so:443 "GET /v1/quote?inputMint=BTC&outputMint=USDC&amount=1000000&slippage=0.1 HTTP/11" 404 None
+ERROR:dex_wrapper:Error fetching Orca price for BTC/USDC: 404 Client Error: Not Found for url: https://api.orca.so/v1/quote?inputMint=BTC&outputMint=USDC&amount=1000000&slippage=0.1
+WARNING:dex_wrapper:Failed to fetch prices from multiple DEXes for BTC/USDC after 3 retries
+WARNING:arbitrage_logic:Not enough prices for BTC/USDC to compare, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+DEBUG:__main__:Opportunities found: []
+INFO:werkzeug:172.31.196.52 - - [17/Sep/2024 10:12:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.31.196.52 - - [17/Sep/2024 10:12:16] "GET /static/css/styles.css HTTP/1.1" 304 -
+INFO:werkzeug:172.31.196.52 - - [17/Sep/2024 10:12:16] "GET /static/js/app.js HTTP/1.1" 304 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching Jupiter price for SOL/USDC
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=SOL&vsToken=USDC HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for SOL/USDC: 132.229161653
+DEBUG:dex_wrapper:Fetching Orca price for SOL/USDC
+DEBUG:urllib3.connectionpool:https://api.orca.so:443 "GET /v1/quote?inputMint=SOL&outputMint=USDC&amount=1000000&slippage=0.1 HTTP/11" 404 None
+ERROR:dex_wrapper:Error fetching Orca price for SOL/USDC: 404 Client Error: Not Found for url: https://api.orca.so/v1/quote?inputMint=SOL&outputMint=USDC&amount=1000000&slippage=0.1
+DEBUG:dex_wrapper:Fetching Jupiter price for SOL/USDC
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=SOL&vsToken=USDC HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for SOL/USDC: 132.229161653
+DEBUG:dex_wrapper:Fetching Orca price for SOL/USDC
+DEBUG:urllib3.connectionpool:https://api.orca.so:443 "GET /v1/quote?inputMint=SOL&outputMint=USDC&amount=1000000&slippage=0.1 HTTP/11" 404 None
+ERROR:dex_wrapper:Error fetching Orca price for SOL/USDC: 404 Client Error: Not Found for url: https://api.orca.so/v1/quote?inputMint=SOL&outputMint=USDC&amount=1000000&slippage=

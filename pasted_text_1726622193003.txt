@@ -1,0 +1,24 @@
+EBUG:dex_wrapper:Fetching Raydium price for SOL/USDC
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/main/pairs HTTPDEBUG:dex_wrapper:Received Raydium price for SOL/USDC: 128.96997772567605
+INFO:__main__:Prices for SOL/USDC: {'jupiter': 125.043519834, 'raydium': 128.96997772567605}
+INFO:__main__:Testing price fetching for BTC/USDC
+DEBUG:dex_wrapper:Fetching Jupiter price for BTC/USDC
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=BTC&vsToken=USDC HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for BTC/USDC: 6.33288e-05
+DEBUG:dex_wrapper:Fetching Orca price for BTC/USDC
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (2): localhost:3000
+ERROR:dex_wrapper:Error fetching Orca price for BTC/USDC: HTTPConnectionPool(host='localhost', port=3000): Max retries exceeded with url: /price?inputToken=9n4nbM75f5Ui33ZbPYXn59EwSgE8CGsHtAeTH5YFeJ9E&outputToken=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&amount=1000000 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f95d39c0d90>: Failed to establish a new connection: [Errno 111] Connection refused'))
+DEBUG:dex_wrapper:Fetching Raydium price for BTC/USDC
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/main/pairs HTTP/11" 200 None
+WARNING:dex_wrapper:No price data found for BTC/USDC in Raydium API response
+INFO:__main__:Prices for BTC/USDC: {'jupiter': 6.33288e-05}
+INFO:__main__:Testing price fetching for SOL/USDT
+DEBUG:dex_wrapper:Fetching Jupiter price for SOL/USDT
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=SOL&vsToken=USDT HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for SOL/USDT: 125.006381909
+DEBUG:dex_wrapper:Fetching Orca price for SOL/USDT
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (3): localhost:3000
+ERROR:dex_wrapper:Error fetching Orca price for SOL/USDT: HTTPConnectionPool(host='localhost', port=3000): Max retries exceeded with url: /price?inputToken=So11111111111111111111111111111111111111112&outputToken=Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB&amount=1000000 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f95d39bd650>: Failed to establish a new connection: [Errno 111] Connection refused'))
+DEBUG:dex_wrapper:Fetching Raydium price for SOL/USDT
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/main/pairs HTTP/11" 200 None

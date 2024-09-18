@@ -1,0 +1,34 @@
+es
+WARNING:arbitrage_logic:Not enough prices for BTC/USDC to compare, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.52 - - [17/Sep/2024 10:11:30] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching Jupiter price for SOL/USDC
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=SOL&vsToken=USDC HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for SOL/USDC: 132.175776653
+DEBUG:dex_wrapper:Fetching Orca price for SOL/USDC
+DEBUG:urllib3.connectionpool:https://api.orca.so:443 "GET /v1/price/quote?inputMint=SOL&outputMint=USDC&amount=1000000000 HTTP/11" 404 None
+ERROR:dex_wrapper:Error fetching Orca price for SOL/USDC: 404 Client Error: Not Found for url: https://api.orca.so/v1/price/quote?inputMint=SOL&outputMint=USDC&amount=1000000000
+DEBUG:dex_wrapper:Fetching Jupiter price for SOL/USDC
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=SOL&vsToken=USDC HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for SOL/USDC: 132.175776653
+DEBUG:dex_wrapper:Fetching Orca price for SOL/USDC
+DEBUG:urllib3.connectionpool:https://api.orca.so:443 "GET /v1/price/quote?inputMint=SOL&outputMint=USDC&amount=1000000000 HTTP/11" 404 None
+ERROR:dex_wrapper:Error fetching Orca price for SOL/USDC: 404 Client Error: Not Found for url: https://api.orca.so/v1/price/quote?inputMint=SOL&outputMint=USDC&amount=1000000000
+DEBUG:dex_wrapper:Fetching Jupiter price for SOL/USDC
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=SOL&vsToken=USDC HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for SOL/USDC: 132.175776653
+DEBUG:dex_wrapper:Fetching Orca price for SOL/USDC
+DEBUG:urllib3.connectionpool:https://api.orca.so:443 "GET /v1/price/quote?inputMint=SOL&outputMint=USDC&amount=1000000000 HTTP/11" 404 None
+ERROR:dex_wrapper:Error fetching Orca price for SOL/USDC: 404 Client Error: Not Found for url: https://api.orca.so/v1/price/quote?inputMint=SOL&outputMint=USDC&amount=1000000000
+WARNING:dex_wrapper:Failed to fetch prices from multiple DEXes for SOL/USDC after 3 retries
+WARNING:arbitrage_logic:Not enough prices for SOL/USDC to compare, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching Jupiter price for SOL/USDT
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=SOL&vsToken=USDT HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for SOL/USDT: 132.727423047
+DEBUG:dex_wrapper:Fetching Orca price for SOL/USDT
+DEBUG:urllib3.connectionpool:https://api.orca.so:443 "GET /v1/price/quote?inputMint=SOL&outputMint=USDT&amount=1000000000 HTTP/11" 404 None
+ERROR:dex_wrapper:Error fetching Orca price for SOL/USDT: 404 Client Error: Not Found for url: https://api.orca.so/v1/price/quote?inputMint=SOL&outputMint=USDT&amount=1000000000
+DEBUG:dex_wrapper:Fetching Jupiter price for SOL/USDT

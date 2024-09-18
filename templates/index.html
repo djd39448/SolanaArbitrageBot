@@ -47,24 +47,24 @@
                     <thead>
                         <tr>
                             <th class="px-4 py-2">Pair</th>
+                            <th class="px-4 py-2">Buy DEX</th>
+                            <th class="px-4 py-2">Sell DEX</th>
                             <th class="px-4 py-2">Buy Price</th>
                             <th class="px-4 py-2">Sell Price</th>
                             <th class="px-4 py-2">Profit %</th>
-                            <th class="px-4 py-2">Action</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr v-for="opportunity in opportunities" :key="opportunity.pair">
+                        {% for opportunity in opportunities %}
+                        <tr>
                             <td class="border px-4 py-2">{{ opportunity.pair }}</td>
-                            <td class="border px-4 py-2">{{ opportunity.buy_price.toFixed(6) }}</td>
-                            <td class="border px-4 py-2">{{ opportunity.sell_price.toFixed(6) }}</td>
-                            <td class="border px-4 py-2">{{ opportunity.profit_percentage.toFixed(2) }}%</td>
-                            <td class="border px-4 py-2">
-                                <button @click="executeTrade(opportunity)" class="bg-green-500 hover:bg-green-700 text-white font-bold py-1 px-2 rounded">
-                                    Execute Trade
-                                </button>
-                            </td>
+                            <td class="border px-4 py-2">{{ opportunity.buy_dex }}</td>
+                            <td class="border px-4 py-2">{{ opportunity.sell_dex }}</td>
+                            <td class="border px-4 py-2">{{ opportunity.buy_price }}</td>
+                            <td class="border px-4 py-2">{{ opportunity.sell_price }}</td>
+                            <td class="border px-4 py-2">{{ opportunity.profit_percentage }}%</td>
                         </tr>
+                        {% endfor %}
                     </tbody>
                 </table>
             {% else %}

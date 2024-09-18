@@ -1,0 +1,73 @@
+DEBUG:dex_wrapper:Fetching Orca price for SOL/USDC
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+ERROR:dex_wrapper:Error fetching Orca price for SOL/USDC: HTTPConnectionPool(host='localhost', port=3000): Max retries exceeded with url: /price?inputToken=So11111111111111111111111111111111111111112&outputToken=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&amount=1000000 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f063cb68d50>: Failed to establish a new connection: [Errno 111] Connection refused'))
+DEBUG:dex_wrapper:Fetching Raydium price for SOL/USDC
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/main/pairs HTTPDEBUG:dex_wrapper:Received Raydium price for SOL/USDC: 128.96997772567605
+INFO:__main__:Prices for SOL/USDC: {'jupiter': 131.098076175, 'raydium': 128.96997772567605}
+INFO:__main__:Testing price fetching for BTC/USDC
+DEBUG:dex_wrapper:Fetching Jupiter price for BTC/USDC
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=BTC&vsToken=USDC HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for BTC/USDC: 6.34556e-05
+DEBUG:dex_wrapper:Fetching Orca price for BTC/USDC
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (2): localhost:3000
+ERROR:dex_wrapper:Error fetching Orca price for BTC/USDC: HTTPConnectionPool(host='localhost', port=3000): Max retries exceeded with url: /price?inputToken=9n4nbM75f5Ui33ZbPYXn59EwSgE8CGsHtAeTH5YFeJ9E&outputToken=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&amount=1000000 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f063cb706d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+DEBUG:dex_wrapper:Fetching Raydium price for BTC/USDC
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/main/pairs HTTP/11" 200 None
+WARNING:dex_wrapper:No price data found for BTC/USDC in Raydium API response
+INFO:__main__:Prices for BTC/USDC: {'jupiter': 6.34556e-05}
+INFO:__main__:Testing price fetching for SOL/USDT
+DEBUG:dex_wrapper:Fetching Jupiter price for SOL/USDT
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=SOL&vsToken=USDT HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for SOL/USDT: 131.223764029
+DEBUG:dex_wrapper:Fetching Orca price for SOL/USDT
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (3): localhost:3000
+ERROR:dex_wrapper:Error fetching Orca price for SOL/USDT: HTTPConnectionPool(host='localhost', port=3000): Max retries exceeded with url: /price?inputToken=So11111111111111111111111111111111111111112&outputToken=Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB&amount=1000000 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f063cb68d90>: Failed to establish a new connection: [Errno 111] Connection refused'))
+DEBUG:dex_wrapper:Fetching Raydium price for SOL/USDT
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/main/pairs HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Raydium price for SOL/USDT: 129.02742678352888
+INFO:__main__:Prices for SOL/USDT: {'jupiter': 131.223764029, 'raydium': 129.02742678352888}
+INFO:__main__:
+Testing Arbitrage Logic
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching Jupiter price for SOL/USDC
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): price.jup.ag:443
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=SOL&vsToken=USDC HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for SOL/USDC: 125.612499107
+DEBUG:dex_wrapper:Fetching Orca price for SOL/USDC
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+ERROR:dex_wrapper:Error fetching Orca price for SOL/USDC: HTTPConnectionPool(host='localhost', port=3000): Max retries exceeded with url: /price?inputToken=So11111111111111111111111111111111111111112&outputToken=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&amount=1000000 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f05f5b042d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+DEBUG:dex_wrapper:Fetching Raydium price for SOL/USDC
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/main/pairs HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Raydium price for SOL/USDC: 128.96997772567605
+DEBUG:arbitrage_logic:Prices for SOL/USDC: {'jupiter': 125.612499107, 'raydium': 128.96997772567605}
+INFO:arbitrage_logic:Arbitrage opportunity found for SOL/USDC: 0.0267% profit from jupiter to raydium
+DEBUG:arbitrage_logic:Compared jupiter and raydium for SOL/USDC: profit1to2=0.0267, profit2to1=-0.0260
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching Jupiter price for SOL/USDT
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=SOL&vsToken=USDT HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for SOL/USDT: 131.225738475
+DEBUG:dex_wrapper:Fetching Orca price for SOL/USDT
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (2): localhost:3000
+ERROR:dex_wrapper:Error fetching Orca price for SOL/USDT: HTTPConnectionPool(host='localhost', port=3000): Max retries exceeded with url: /price?inputToken=So11111111111111111111111111111111111111112&outputToken=Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB&amount=1000000 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f063cb73210>: Failed to establish a new connection: [Errno 111] Connection refused'))
+DEBUG:dex_wrapper:Fetching Raydium price for SOL/USDT
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/main/pairs HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Raydium price for SOL/USDT: 129.02742678352888
+DEBUG:arbitrage_logic:Prices for SOL/USDT: {'jupiter': 131.225738475, 'raydium': 129.02742678352888}
+INFO:arbitrage_logic:Arbitrage opportunity found for SOL/USDT: 0.0170% profit from raydium to jupiter
+DEBUG:arbitrage_logic:Compared jupiter and raydium for SOL/USDT: profit1to2=-0.0168, profit2to1=0.0170
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching Jupiter price for BTC/USDC
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=BTC&vsToken=USDC HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for BTC/USDC: 6.07422e-05
+DEBUG:dex_wrapper:Fetching Orca price for BTC/USDC
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (3): localhost:3000
+ERROR:dex_wrapper:Error fetching Orca price for BTC/USDC: HTTPConnectionPool(host='localhost', port=3000): Max retries exceeded with url: /price?inputToken=9n4nbM75f5Ui33ZbPYXn59EwSgE8CGsHtAeTH5YFeJ9E&outputToken=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&amount=1000000 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f05f4f21010>: Failed to establish a new connection: [Errno 111] Connection refused'))
+DEBUG:dex_wrapper:Fetching Raydium price for BTC/USDC
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/main/pairs HTTP/11" 200 None
+WARNING:dex_wrapper:No price data found for BTC/USDC in Raydium API response
+DEBUG:arbitrage_logic:Prices for BTC/USDC: {'jupiter': 6.07422e-05}
+DEBUG:arbitrage_logic:Total opportunities found: 2
+INFO:__main__:Arbitrage opportunities found: [{'pair': 'SOL/USDC', 'buy_dex': 'jupiter', 'sell_dex': 'raydium', 'buy_price': 125.612499107, 'sell_price': 128.96997772567605, 'profit_percentage': 2.67288577374458}, {'pair': 'SOL/USDT', 'buy_dex': 'raydium', 'sell_dex': 'jupiter', 'buy_price': 129.02742678352888, 'sell_price': 131.225738475, 'profit_percentage': 1.7037553536266916}]

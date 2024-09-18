@@ -1,0 +1,17 @@
+{
+  "name": "solanaarbitragebot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@orca-so/whirlpools-sdk": "^0.13.5",
+    "@solana/web3.js": "^1.95.3",
+    "express": "^4.21.0"
+  }
+}

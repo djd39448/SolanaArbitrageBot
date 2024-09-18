@@ -1,0 +1,68 @@
+INFO:__main__:Testing DEX Wrapper
+INFO:__main__:Testing price fetching for SOL/USDC
+DEBUG:dex_wrapper:Fetching Jupiter price for SOL/USDC
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): price.jup.ag:443
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=SOL&vsToken=USDC HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for SOL/USDC: 124.943353807
+DEBUG:dex_wrapper:Fetching Orca price for SOL/USDC
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.orca.so:443
+DEBUG:urllib3.connectionpool:https://api.orca.so:443 "GET /v2/quote?inputMint=So11111111111111111111111111111111111111112&outputMint=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&amount=1000000&slippage=0.5 HTTP/11" 404 None
+ERROR:dex_wrapper:Error fetching Orca price for SOL/USDC: 404 Client Error: Not Found for url: https://api.orca.so/v2/quote?inputMint=So11111111111111111111111111111111111111112&outputMint=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&amount=1000000&slippage=0.5
+ERROR:dex_wrapper:Orca API response: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /v2/quote</pre>
+</body>
+</html>
+
+DEBUG:dex_wrapper:Fetching Raydium price for SOL/USDC
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.raydium.io:443
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/main/pairs HTTP/11" 200 None
+WARNING:dex_wrapper:No price data found for SOL/USDC in Raydium API response
+INFO:__main__:Prices for SOL/USDC: {'jupiter': 124.943353807}
+INFO:__main__:Testing price fetching for BTC/USDC
+DEBUG:dex_wrapper:Fetching Jupiter price for BTC/USDC
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=BTC&vsToken=USDC HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for BTC/USDC: 6.06422e-05
+DEBUG:dex_wrapper:Fetching Orca price for BTC/USDC
+DEBUG:urllib3.connectionpool:https://api.orca.so:443 "GET /v2/quote?inputMint=9n4nbM75f5Ui33ZbPYXn59EwSgE8CGsHtAeTH5YFeJ9E&outputMint=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&amount=1000000&slippage=0.5 HTTP/11" 404 None
+ERROR:dex_wrapper:Error fetching Orca price for BTC/USDC: 404 Client Error: Not Found for url: https://api.orca.so/v2/quote?inputMint=9n4nbM75f5Ui33ZbPYXn59EwSgE8CGsHtAeTH5YFeJ9E&outputMint=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&amount=1000000&slippage=0.5
+ERROR:dex_wrapper:Orca API response: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /v2/quote</pre>
+</body>
+</html>
+
+DEBUG:dex_wrapper:Fetching Raydium price for BTC/USDC
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/main/pairs HTTP/11" 200 None
+WARNING:dex_wrapper:No price data found for BTC/USDC in Raydium API response
+INFO:__main__:Prices for BTC/USDC: {'jupiter': 6.06422e-05}
+INFO:__main__:Testing price fetching for SOL/USDT
+DEBUG:dex_wrapper:Fetching Jupiter price for SOL/USDT
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=SOL&vsToken=USDT HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for SOL/USDT: 132.8564662
+DEBUG:dex_wrapper:Fetching Orca price for SOL/USDT
+DEBUG:urllib3.connectionpool:https://api.orca.so:443 "GET /v2/quote?inputMint=So11111111111111111111111111111111111111112&outputMint=Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB&amount=1000000&slippage=0.5 HTTP/11" 404 None
+ERROR:dex_wrapper:Error fetching Orca price for SOL/USDT: 404 Client Error: Not Found for url: https://api.orca.so/v2/quote?inputMint=So11111111111111111111111111111111111111112&outputMint=Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB&amount=1000000&slippage=0.5
+ERROR:dex_wrapper:Orca API response: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /v2/quote</pre>
+</body>
+</html>
+
+DEBUG:dex_wrapper:Fetching Raydium price for SOL/USDT
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/main/pairs HTTP/11" 200 None

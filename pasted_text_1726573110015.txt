@@ -1,0 +1,31 @@
+ResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f57b27896d0>: Failed to resolve 'serum-api.com' ([Errno -2] Name or service not known)"))
+DEBUG:dex_wrapper:Fetching Jupiter price for SOL/USDC
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=SOL&vsToken=USDC HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for SOL/USDC: 132.479387102
+DEBUG:dex_wrapper:Fetching Orca price for SOL/USDC
+DEBUG:urllib3.connectionpool:https://api.orca.so:443 "GET /v1/quote?inputMint=SOL&outputMint=USDC&amount=1000000&slippage=0.1 HTTP/11" 404 None
+ERROR:dex_wrapper:Error fetching Orca price for SOL/USDC: 404 Client Error: Not Found for url: https://api.orca.so/v1/quote?inputMint=SOL&outputMint=USDC&amount=1000000&slippage=0.1
+DEBUG:dex_wrapper:Fetching Raydium price for SOL/USDC
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/main/pairs HTTP/11" 200 None
+WARNING:dex_wrapper:No price data found for SOL/USDC in Raydium API response
+DEBUG:dex_wrapper:Fetching Serum price for SOL/USDC
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (9): serum-api.com:443
+DEBUG:urllib3.util.retry:Incremented Retry for (url='/orderbooks/SOLUSDC'): Retry(total=2, connect=None, read=None, redirect=None, status=None)
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f57b27a0450>: Failed to resolve 'serum-api.com' ([Errno -2] Name or service not known)")': /orderbooks/SOLUSDC
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (10): serum-api.com:443
+DEBUG:urllib3.util.retry:Incremented Retry for (url='/orderbooks/SOLUSDC'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f57b27a0fd0>: Failed to resolve 'serum-api.com' ([Errno -2] Name or service not known)")': /orderbooks/SOLUSDC
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (11): serum-api.com:443
+DEBUG:urllib3.util.retry:Incremented Retry for (url='/orderbooks/SOLUSDC'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f57b27a15d0>: Failed to resolve 'serum-api.com' ([Errno -2] Name or service not known)")': /orderbooks/SOLUSDC
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (12): serum-api.com:443
+ERROR:dex_wrapper:Error fetching Serum price for SOL/USDC: HTTPSConnectionPool(host='serum-api.com', port=443): Max retries exceeded with url: /orderbooks/SOLUSDC (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f57b27a1bd0>: Failed to resolve 'serum-api.com' ([Errno -2] Name or service not known)"))
+WARNING:dex_wrapper:Failed to fetch prices from multiple DEXes for SOL/USDC after 3 retries
+INFO:__main__:Prices for SOL/USDC: {'jupiter': 132.479387102}
+Traceback (most recent call last):
+  File "/home/runner/SolanaArbitrageBot/test_dex_wrapper.py", line 58, in <module>
+    test_dex_wrapper()
+  File "/home/runner/SolanaArbitrageBot/test_dex_wrapper.py", line 19, in test_dex_wrapper
+    assert len(prices) >= 2, f"Expected at least 2 prices for {pair}, but got {len(prices)}"
+           ^^^^^^^^^^^^^^^^
+AssertionError: Expected at least 2 prices for SOL/USDC, but got 1

@@ -1,0 +1,101 @@
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=BTC&vsToken=USDC HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for BTC/USDC: 6.39353e-05
+DEBUG:dex_wrapper:Fetching Raydium price for BTC/USDC
+WARNING:dex_wrapper:No price data found for SOL/USDT in Raydium API response
+DEBUG:dex_wrapper:Fetching Jupiter price for SOL/USDT
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/main/pairs HTTP/11" 200 None
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=SOL&vsToken=USDT HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for SOL/USDT: 132.690326151
+DEBUG:dex_wrapper:Fetching Raydium price for SOL/USDT
+WARNING:dex_wrapper:No price data found for SOL/USDT in Raydium API response
+DEBUG:dex_wrapper:Fetching Jupiter price for SOL/USDT
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/main/pairs HTTP/11" 200 None
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=SOL&vsToken=USDT HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for SOL/USDT: 132.695744017
+DEBUG:dex_wrapper:Fetching Raydium price for SOL/USDT
+WARNING:dex_wrapper:No price data found for SOL/USDC in Raydium API response
+DEBUG:dex_wrapper:Fetching Jupiter price for SOL/USDC
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/main/pairs HTTP/11" 200 None
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=SOL&vsToken=USDC HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for SOL/USDC: 132.242627877
+WARNING:dex_wrapper:Failed to fetch prices from multiple DEXes for SOL/USDC after 3 retries
+WARNING:arbitrage_logic:Not enough prices for SOL/USDC to compare, skipping...
+DEBUG:arbitrage_logic:Processing pair: SOL/USDT
+DEBUG:dex_wrapper:Fetching Raydium price for SOL/USDT
+WARNING:dex_wrapper:No price data found for BTC/USDC in Raydium API response
+WARNING:dex_wrapper:No price data found for SOL/USDT in Raydium API response
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/main/pairs HTTP/11" 200 None
+DEBUG:dex_wrapper:Fetching Jupiter price for BTC/USDC
+DEBUG:dex_wrapper:Fetching Jupiter price for SOL/USDT
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=BTC&vsToken=USDC HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for BTC/USDC: 6.39348e-05
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=SOL&vsToken=USDT HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for SOL/USDT: 132.688044792
+WARNING:dex_wrapper:Failed to fetch prices from multiple DEXes for BTC/USDC after 3 retries
+WARNING:dex_wrapper:Failed to fetch prices from multiple DEXes for SOL/USDT after 3 retries
+WARNING:arbitrage_logic:Not enough prices for BTC/USDC to compare, skipping...
+WARNING:arbitrage_logic:Not enough prices for SOL/USDT to compare, skipping...
+WARNING:dex_wrapper:No price data found for BTC/USDC in Raydium API response
+DEBUG:arbitrage_logic:Total opportunities found: 0
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching Jupiter price for BTC/USDC
+INFO:werkzeug:172.31.196.52 - - [17/Sep/2024 10:09:13] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:dex_wrapper:Fetching Raydium price for BTC/USDC
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/main/pairs HTTP/11" 200 None
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching Raydium price for SOL/USDC
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=BTC&vsToken=USDC HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for BTC/USDC: 6.39347e-05
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/main/pairs HTTP/11" 200 None
+DEBUG:dex_wrapper:Fetching Raydium price for BTC/USDC
+WARNING:dex_wrapper:No price data found for SOL/USDT in Raydium API response
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/main/pairs HTTP/11" 200 None
+DEBUG:dex_wrapper:Fetching Jupiter price for SOL/USDT
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=SOL&vsToken=USDT HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for SOL/USDT: 132.695267287
+DEBUG:dex_wrapper:Fetching Raydium price for SOL/USDT
+WARNING:dex_wrapper:No price data found for SOL/USDT in Raydium API response
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/main/pairs HTTP/11" 200 None
+DEBUG:dex_wrapper:Fetching Jupiter price for SOL/USDT
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=SOL&vsToken=USDT HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for SOL/USDT: 132.695235701
+WARNING:dex_wrapper:Failed to fetch prices from multiple DEXes for SOL/USDT after 3 retries
+WARNING:arbitrage_logic:Not enough prices for SOL/USDT to compare, skipping...
+DEBUG:arbitrage_logic:Processing pair: BTC/USDC
+DEBUG:dex_wrapper:Fetching Raydium price for BTC/USDC
+WARNING:dex_wrapper:No price data found for SOL/USDT in Raydium API response
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/main/pairs HTTP/11" 200 None
+DEBUG:dex_wrapper:Fetching Jupiter price for SOL/USDT
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=SOL&vsToken=USDT HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for SOL/USDT: 132.718668725
+DEBUG:dex_wrapper:Fetching Raydium price for SOL/USDT
+WARNING:dex_wrapper:No price data found for BTC/USDC in Raydium API response
+DEBUG:dex_wrapper:Fetching Jupiter price for BTC/USDC
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/main/pairs HTTP/11" 200 None
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=BTC&vsToken=USDC HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for BTC/USDC: 6.39085e-05
+DEBUG:dex_wrapper:Fetching Raydium price for BTC/USDC
+WARNING:dex_wrapper:No price data found for BTC/USDC in Raydium API response
+WARNING:dex_wrapper:No price data found for SOL/USDC in Raydium API response
+DEBUG:dex_wrapper:Fetching Jupiter price for BTC/USDC
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/main/pairs HTTP/11" 200 None
+DEBUG:dex_wrapper:Fetching Jupiter price for SOL/USDC
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=SOL&vsToken=USDC HTTP/11" 200 None
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=BTC&vsToken=USDC HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for SOL/USDC: 132.186233536
+DEBUG:dex_wrapper:Received Jupiter price for BTC/USDC: 6.39085e-05
+DEBUG:dex_wrapper:Fetching Raydium price for SOL/USDC
+WARNING:dex_wrapper:Failed to fetch prices from multiple DEXes for BTC/USDC after 3 retries
+WARNING:arbitrage_logic:Not enough prices for BTC/USDC to compare, skipping...
+DEBUG:arbitrage_logic:Total opportunities found: 0
+INFO:werkzeug:172.31.196.52 - - [17/Sep/2024 10:09:38] "GET /api/opportunities HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/main/pairs HTTP/11" 200 None
+DEBUG:arbitrage_logic:Starting to find arbitrage opportunities
+WARNING:dex_wrapper:No price data found for SOL/USDT in Raydium API response
+DEBUG:arbitrage_logic:Processing pair: SOL/USDC
+DEBUG:dex_wrapper:Fetching Raydium price for SOL/USDC
+DEBUG:dex_wrapper:Fetching Jupiter price for SOL/USDT
+DEBUG:urllib3.connectionpool:https://api.raydium.io:443 "GET /v2/main/pairs HTTP/11" 200 None
+DEBUG:urllib3.connectionpool:https://price.jup.ag:443 "GET /v4/price?ids=SOL&vsToken=USDT HTTP/11" 200 None
+DEBUG:dex_wrapper:Received Jupiter price for SOL/USDT: 132.760503489

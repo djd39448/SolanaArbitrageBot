@@ -24,7 +24,7 @@ except Exception as e:
 # Initialize components
 try:
     solana_interaction = SolanaInteraction(config['solana_rpc_url'])
-    dex_wrapper = DEXWrapper([config['dex_api_url'], "https://api.raydium.io", "https://api-serum.com"])
+    dex_wrapper = DEXWrapper()
     
     # Check if the private key is set in the environment variable
     env_private_key = os.environ.get('SOLANA_PRIVATE_KEY')
@@ -35,6 +35,7 @@ try:
         logger.warning("No valid private key found. Some features may be limited.")
     
     arbitrage_logic = ArbitrageLogic(solana_interaction, dex_wrapper, wallet)
+    arbitrage_logic.update_settings(config)
 except Exception as e:
     logger.error(f"Error initializing components: {str(e)}")
     raise
@@ -44,10 +45,6 @@ def index():
     try:
         opportunities = arbitrage_logic.find_opportunities()
         logger.debug(f"Opportunities found: {opportunities}")
-        
-        if opportunities is None:
-            logger.warning("find_opportunities returned None")
-            opportunities = []
         
         current_settings = {
             "min_trade_size": arbitrage_logic.min_trade_size,
