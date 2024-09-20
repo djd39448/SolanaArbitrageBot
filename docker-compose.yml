@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  solaarbitragebot:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - SOLANA_PRIVATE_KEY=your_private_key_here
+
